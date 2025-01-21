@@ -297,6 +297,12 @@
     `(window-divider-first-pixel ((,class (:background ,nord3))))
     `(window-divider-last-pixel ((,class (:background ,nord3))))
 
+    ;; > Line numbers
+    `(line-number                  ((t (:foreground ,nord-comment))))
+    `(line-number-current-line     ((t (:foreground ,nord4 :background ,nord1 :weight bold))))
+    `(line-number-major-tick       ((t (:foreground ,nord-comment))))
+    `(line-number-minor-tick       ((t (:foreground ,nord-comment))))
+
     ;;;; +-----------------+
     ;;;; + Package Support +
     ;;;; +-----------------+
