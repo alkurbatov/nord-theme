@@ -245,15 +245,6 @@
     `(region ((,class (:foreground ,nord-region-highlight-foreground :background ,nord-region-highlight-background))))
     `(scroll-bar ((,class (:background ,nord3))))
     `(secondary-selection ((,class (:background ,nord2))))
-
-    ;; `show-paren-match-face` and `show-paren-mismatch-face` are deprecated since Emacs version 22.1 and were
-    ;; removed in Emacs 25.
-    ;; https://github.com/nordtheme/emacs/issues/75
-    ;; http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=c430f7e23fc2c22f251ace4254e37dea1452dfc3
-    ;; https://github.com/emacs-mirror/emacs/commit/c430f7e23fc2c22f251ace4254e37dea1452dfc3
-    `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
-    `(show-paren-mismatch-face ((,class (:background ,nord11))))
-
     `(show-paren-match ((,class (:foreground ,nord0 :background ,nord8))))
     `(show-paren-mismatch ((,class (:background ,nord11))))
     `(success ((,class (:foreground ,nord14))))
