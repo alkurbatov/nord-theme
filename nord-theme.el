@@ -40,6 +40,13 @@
 (unless (>= emacs-major-version 30)
   (error "Nord theme requires Emacs 30 or later!"))
 
+(defun nord-display-truecolor-or-graphic-p ()
+  "Returns whether the display can display nord colors"
+  (or (= (display-color-cells) 16777216) (display-graphic-p)))
+
+(unless (nord-display-truecolor-or-graphic-p)
+  (error "Display cannot display nord colors!"))
+
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
 (defgroup nord nil
@@ -60,43 +67,39 @@
   :type 'boolean
   :group 'nord)
 
-(defun nord-display-truecolor-or-graphic-p ()
-  "Returns whether the display can display nord colors"
-  (or (= (display-color-cells) 16777216) (display-graphic-p)))
-
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
-  (nord0 (if (nord-display-truecolor-or-graphic-p) "#2E3440" nil)) ;; polar-night-0
-  (nord1 (if (nord-display-truecolor-or-graphic-p) "#3B4252" "black")) ;; polar-night-1
-  (nord2 (if (nord-display-truecolor-or-graphic-p) "#434C5E" "#434C5E")) ;; polar-night-2
-  (nord3 (if (nord-display-truecolor-or-graphic-p) "#4C566A" "brightblack")) ;; polar-night-3
-  (nord4 (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9")) ;; snow-storm-0
-  (nord5 (if (nord-display-truecolor-or-graphic-p) "#E5E9F0" "white")) ;; snow-storm-1
-  (nord6 (if (nord-display-truecolor-or-graphic-p) "#ECEFF4" "brightwhite")) ;; snow-storm-2
-  (nord7 (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan")) ;; frost-0
-  (nord8 (if (nord-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan")) ;; frost-1
-  (nord9 (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue")) ;; frost-2
-  (nord10 (if (nord-display-truecolor-or-graphic-p) "#5E81AC" "brightblue")) ;; frost-3
-  (nord11 (if (nord-display-truecolor-or-graphic-p) "#BF616A" "red")) ;; aurora-0
-  (nord12 (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow")) ;; aurora-1
-  (nord13 (if (nord-display-truecolor-or-graphic-p) "#EBCB8B" "yellow")) ;; aurora-2
-  (nord14 (if (nord-display-truecolor-or-graphic-p) "#A3BE8C" "green")) ;; aurora-3
-  (nord15 (if (nord-display-truecolor-or-graphic-p) "#B48EAD" "magenta")) ;; aurora-4
-  (nord-annotation (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
-  (nord-attribute (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
-  (nord-class (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (nord-display-truecolor-or-graphic-p) "#677691" "brightblack"))
-  (nord-escape (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
-  (nord-method (if (nord-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan"))
-  (nord-keyword (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
-  (nord-numeric (if (nord-display-truecolor-or-graphic-p) "#B48EAD" "magenta"))
-  (nord-operator (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
-  (nord-preprocessor (if (nord-display-truecolor-or-graphic-p) "#5E81AC" "brightblue"))
-  (nord-punctuation (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
-  (nord-regexp (if (nord-display-truecolor-or-graphic-p) "#EBCB8B" "yellow"))
-  (nord-string (if (nord-display-truecolor-or-graphic-p) "#A3BE8C" "green"))
-  (nord-tag (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord0 "#2E3440") ;; polar-night-0
+  (nord1 "#3B4252") ;; polar-night-1
+  (nord2 "#434C5E") ;; polar-night-2
+  (nord3 "#4C566A") ;; polar-night-3
+  (nord4 "#D8DEE9") ;; snow-storm-0
+  (nord5 "#E5E9F0") ;; snow-storm-1
+  (nord6 "#ECEFF4") ;; snow-storm-2
+  (nord7 "#8FBCBB") ;; frost-0
+  (nord8 "#88C0D0") ;; frost-1
+  (nord9 "#81A1C1") ;; frost-2
+  (nord10 "#5E81AC") ;; frost-3
+  (nord11 "#BF616A") ;; aurora-0
+  (nord12 "#D08770") ;; aurora-1
+  (nord13 "#EBCB8B") ;; aurora-2
+  (nord14 "#A3BE8C") ;; aurora-3
+  (nord15 "#B48EAD") ;; aurora-4
+  (nord-annotation "#D08770")
+  (nord-attribute "#8FBCBB")
+  (nord-class "#8FBCBB")
+  (nord-comment "#677691")
+  (nord-escape "#D08770")
+  (nord-method "#88C0D0")
+  (nord-keyword "#81A1C1")
+  (nord-numeric "#B48EAD")
+  (nord-operator "#81A1C1")
+  (nord-preprocessor "#5E81AC")
+  (nord-punctuation "#D8DEE9")
+  (nord-regexp "#EBCB8B")
+  (nord-string "#A3BE8C")
+  (nord-tag "#81A1C1")
+  (nord-variable "#D8DEE9")
   (nord-region-highlight-foreground (if (or
     (string= nord-region-highlight "frost")
     (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
