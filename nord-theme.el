@@ -67,6 +67,23 @@
   :type 'boolean
   :group 'nord)
 
+;;;###theme-autoload
+(defun nord-load-theme ()
+  "Load Nord theme and apply additional settings."
+  (load-theme 'nord :no-confirm)
+
+  ;; Default frame settings
+  (setq default-frame-alist
+        (append (list
+                 '(vertical-scroll-bars . nil)
+                 '(internal-border-width . 24)
+                 '(left-fringe . 4)
+                 '(right-fringe . 0)
+                 '(undecorated-round . t) ;; emacs-plus@29 only
+                 '(scroll-bar-mode . -1)
+                 '(tool-bar-lines . 0)
+                 '(menu-bar-lines . 0)))))
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
   (nord0 "#2E3440") ;; polar-night-0
