@@ -85,38 +85,39 @@
                  '(menu-bar-lines . 0)))))
 
 ;;;; Color Constants
+(defvar nord0 "#2E3440") ;; polar-night-0
+(defvar nord1 "#3B4252") ;; polar-night-1
+(defvar nord2 "#434C5E") ;; polar-night-2
+(defvar nord3 "#4C566A") ;; polar-night-3
+(defvar nord4 "#D8DEE9") ;; snow-storm-0
+(defvar nord5 "#E5E9F0") ;; snow-storm-1
+(defvar nord6 "#ECEFF4") ;; snow-storm-2
+(defvar nord7 "#8FBCBB") ;; frost-0
+(defvar nord8 "#88C0D0") ;; frost-1
+(defvar nord9 "#81A1C1") ;; frost-2
+(defvar nord10 "#5E81AC") ;; frost-3
+(defvar nord11 "#BF616A") ;; aurora-0
+(defvar nord12 "#D08770") ;; aurora-1
+(defvar nord13 "#EBCB8B") ;; aurora-2
+(defvar nord14 "#A3BE8C") ;; aurora-3
+(defvar nord15 "#B48EAD") ;; aurora-4
+(defvar nord-annotation "#D08770")
+(defvar nord-attribute "#8FBCBB")
+(defvar nord-class "#8FBCBB")
+(defvar nord-comment "#677691")
+(defvar nord-escape "#D08770")
+(defvar nord-method "#88C0D0")
+(defvar nord-keyword "#81A1C1")
+(defvar nord-numeric "#B48EAD")
+(defvar nord-operator "#81A1C1")
+(defvar nord-preprocessor "#5E81AC")
+(defvar nord-punctuation "#D8DEE9")
+(defvar nord-regexp "#EBCB8B")
+(defvar nord-string "#A3BE8C")
+(defvar nord-tag "#81A1C1")
+(defvar nord-variable "#D8DEE9")
+
 (let ((class '((class color) (min-colors 89)))
-  (nord0 "#2E3440") ;; polar-night-0
-  (nord1 "#3B4252") ;; polar-night-1
-  (nord2 "#434C5E") ;; polar-night-2
-  (nord3 "#4C566A") ;; polar-night-3
-  (nord4 "#D8DEE9") ;; snow-storm-0
-  (nord5 "#E5E9F0") ;; snow-storm-1
-  (nord6 "#ECEFF4") ;; snow-storm-2
-  (nord7 "#8FBCBB") ;; frost-0
-  (nord8 "#88C0D0") ;; frost-1
-  (nord9 "#81A1C1") ;; frost-2
-  (nord10 "#5E81AC") ;; frost-3
-  (nord11 "#BF616A") ;; aurora-0
-  (nord12 "#D08770") ;; aurora-1
-  (nord13 "#EBCB8B") ;; aurora-2
-  (nord14 "#A3BE8C") ;; aurora-3
-  (nord15 "#B48EAD") ;; aurora-4
-  (nord-annotation "#D08770")
-  (nord-attribute "#8FBCBB")
-  (nord-class "#8FBCBB")
-  (nord-comment "#677691")
-  (nord-escape "#D08770")
-  (nord-method "#88C0D0")
-  (nord-keyword "#81A1C1")
-  (nord-numeric "#B48EAD")
-  (nord-operator "#81A1C1")
-  (nord-preprocessor "#5E81AC")
-  (nord-punctuation "#D8DEE9")
-  (nord-regexp "#EBCB8B")
-  (nord-string "#A3BE8C")
-  (nord-tag "#81A1C1")
-  (nord-variable "#D8DEE9")
   (nord-region-highlight-foreground (if (or
     (string= nord-region-highlight "frost")
     (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
