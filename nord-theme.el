@@ -541,12 +541,27 @@
     `(evil-ex-substitute-matches ((,class (:inherit isearch))))
 
     ;; > Flycheck
-    `(flycheck-error ((,class (:underline (:style wave :color ,nord11)))))
-    `(flycheck-fringe-error ((,class (:foreground ,nord11 :weight bold))))
-    `(flycheck-fringe-info ((,class (:foreground ,nord8 :weight bold))))
-    `(flycheck-fringe-warning ((,class (:foreground ,nord13 :weight bold))))
-    `(flycheck-info ((,class (:underline (:style wave :color ,nord8)))))
-    `(flycheck-warning ((,class (:underline (:style wave :color ,nord13)))))
+    `(flycheck-error              ((,class (:underline (:style wave :color ,nord11)))))
+    `(flycheck-fringe-error       ((,class (:foreground ,nord11 :weight bold))))
+    `(flycheck-warning            ((,class (:underline (:style wave :color ,nord13)))))
+    `(flycheck-fringe-warning     ((,class (:foreground ,nord13 :weight bold))))
+    `(flycheck-info               ((,class (:underline (:style wave :color ,nord8)))))
+    `(flycheck-fringe-info        ((,class (:foreground ,nord8 :weight bold))))
+
+    ;; > Flymake
+    `(flymake-error            ((,class (:underline (:style wave :color ,nord11)))))
+    `(flymake-error-echo       ((,class (:foreground ,nord11))))
+    `(flymake-warning          ((,class (:underline (:style wave :color ,nord13)))))
+    `(flymake-warning-echo     ((,class (:foreground ,nord13))))
+    `(flymake-note             ((,class (:underline (:style wave :color ,nord8)))))
+    `(flymake-note-echo        ((,class (:foreground ,nord8))))
+
+    ;; > Flymake-popon
+    `(flymake-popon-posframe-border     ((,class (:foreground ,nord0))))
+
+    ;; > Flyspell
+    `(flyspell-incorrect     ((,class (:underline (:style wave :color ,nord8)))))
+    `(flyspell-duplicate     ((,class (:inherit flyspell-incorrect))))
 
     ;; > Git Gutter
     `(git-gutter:modified ((,class (:foreground ,nord13))))
@@ -607,6 +622,9 @@
     `(helm-swoop-target-line-block-face ((,class (:background ,nord13 :foreground ,nord3))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
+
+    ;; > Jink
+    `(jinx-misspelled     ((,class (:underline (:style wave :color ,nord8)))))
 
     ;; > Magit
     `(magit-branch ((,class (:foreground ,nord7 :weight bold))))
@@ -725,7 +743,7 @@
     `(org-verbatim ((,class (:foreground ,nord7))))
 
     ;; > Vertico
-    `(vertico-current             ((,class (:background ,nord8 :foreground ,nord0 :weight bold))))
+    `(vertico-current             ((,class (:background ,nord2 :foreground ,nord8 :weight bold))))
     `(vertico-group-separator     ((,class (:foreground ,nord-comment))))
     `(vertico-group-title         ((,class (:foreground ,nord-comment))))
     `(vertico-multiline           ((,class (:foreground ,nord-comment))))
