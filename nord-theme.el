@@ -151,15 +151,15 @@
     `(font-lock-keyword-face                  ((,class (:foreground ,nord9))))
     `(font-lock-misc-punctuation-face         ((,class (:foreground ,nord8))))
     `(font-lock-negation-char-face            ((,class (:foreground ,nord9))))
-    `(font-lock-number-face                   ((,class (:foreground ,nord15))))
-    `(font-lock-operator-face                 ((,class (:foreground ,nord9))))
+    `(font-lock-number-face                   ((,class (:foreground ,nord-numeric))))
+    `(font-lock-operator-face                 ((,class (:foreground ,nord-operator))))
     `(font-lock-preprocessor-face             ((,class (:foreground ,nord10 :weight bold))))
     `(font-lock-reference-face                ((,class (:foreground ,nord9))))
     `(font-lock-regexp-grouping-backslash     ((,class (:foreground ,nord13))))
     `(font-lock-regexp-grouping-construct     ((,class (:foreground ,nord13))))
-    `(font-lock-string-face                   ((,class (:foreground ,nord14))))
+    `(font-lock-string-face                   ((,class (:foreground ,nord-string))))
     `(font-lock-type-face                     ((,class (:foreground ,nord4))))
-    `(font-lock-variable-name-face            ((,class (:foreground ,nord4))))
+    `(font-lock-variable-name-face            ((,class (:foreground ,nord-variable))))
     `(font-lock-warning-face                  ((,class (:foreground ,nord13))))
     `(italic                                  ((,class (:slant italic))))
     `(shadow                                  ((,class (:foreground ,nord3))))
@@ -437,7 +437,7 @@
     `(markdown-url-face ((,class (:foreground ,nord4 :underline t))))
 
     ;; > Makefile
-    `(makefile-ts-mode-target-face ((,class (:foreground ,nord9))))
+    `(makefile-ts-mode-target-face     ((,class (:foreground ,nord9))))
 
     ;; > Marginalia
     `(marginalia-archive             ((,class (:foreground ,nord-comment))))
@@ -472,6 +472,11 @@
     `(marginalia-type                ((,class (:foreground ,nord-comment))))
     `(marginalia-value               ((,class (:foreground ,nord-comment))))
     `(marginalia-version             ((,class (:foreground ,nord-comment))))
+
+    ;; > Pip-requirements
+    `(pip-requirements-name-regex-face          ((,class (:foreground ,nord4))))
+    `(pip-requirements-version-regex-1-face     ((,class (:foreground ,nord-operator))))
+    `(pip-requirements-version-regex-2-face     ((,class (:foreground ,nord15))))
 
     ;; > Rainbow Delimeters
     `(rainbow-delimiters-depth-1-face ((,class :foreground ,nord7)))
