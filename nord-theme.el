@@ -161,6 +161,10 @@
     `(underline ((,class (:underline t))))
     `(warning ((,class (:foreground ,nord13 :weight bold))))
 
+    ;; > Dired
+    `(dired-directory ((,class (:foreground ,nord9 :weight bold))))
+    `(dired-symlink   ((,class (:foreground ,nord7 :weight bold))))
+
     ;; +--- Syntax ---+
     ;; > C
     `(c-annotation-face ((,class (:foreground ,nord-annotation))))
