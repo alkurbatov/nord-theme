@@ -426,6 +426,9 @@
     `(markdown-reference-face ((,class (:inherit markdown-link-face))))
     `(markdown-url-face ((,class (:foreground ,nord4 :underline t))))
 
+    ;; > Makefile
+    `(makefile-ts-mode-target-face ((,class (:foreground ,nord9))))
+
     ;; > Marginalia
     `(marginalia-archive             ((,class (:foreground ,nord-comment))))
     `(marginalia-char                ((,class (:foreground ,nord-comment))))
