@@ -165,7 +165,7 @@
     `(shadow                                  ((,class (:foreground ,nord3))))
     `(underline                               ((,class (:underline t))))
     `(warning                                 ((,class (:foreground ,nord13 :weight bold))))
-
+    
     ;; > Dired
     `(dired-directory ((,class (:foreground ,nord9 :weight bold))))
     `(dired-symlink   ((,class (:foreground ,nord7 :weight bold))))
@@ -190,6 +190,11 @@
     `(diff-refine-changed ((,class (:foreground ,nord13))))
     `(diff-refine-removed ((,class (:foreground ,nord11))))
     `(diff-removed ((,class (:foreground ,nord11))))
+
+    ;; > Eglot
+    `(eglot-diagnostic-tag-deprecated-face      ((,class (:underline (:style wave :color ,nord8)))))
+    `(eglot-diagnostic-tag-unnecessary-face     ((,class (:underline (:style wave :color ,nord8)))))
+    `(eglot-inlay-hint-face                     ((,class (:foreground ,nord-comment))))
 
     ;; +--- UI ---+
     `(border ((,class (:foreground ,nord4))))
