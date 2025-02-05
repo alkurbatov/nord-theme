@@ -254,14 +254,6 @@
     `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
-    `(outline-1 ((,class (:foreground ,nord8 :weight bold))))
-    `(outline-2 ((,class (:inherit outline-1))))
-    `(outline-3 ((,class (:inherit outline-1))))
-    `(outline-4 ((,class (:inherit outline-1))))
-    `(outline-5 ((,class (:inherit outline-1))))
-    `(outline-6 ((,class (:inherit outline-1))))
-    `(outline-7 ((,class (:inherit outline-1))))
-    `(outline-8 ((,class (:inherit outline-1))))
     `(package-description ((,class (:foreground ,nord4))))
     `(package-help-section-name ((,class (:foreground ,nord8 :weight bold))))
     `(package-name ((,class (:foreground ,nord8))))
@@ -325,6 +317,16 @@
     `(line-number-current-line     ((t (:foreground ,nord4 :background ,nord1 :weight bold))))
     `(line-number-major-tick       ((t (:foreground ,nord-comment))))
     `(line-number-minor-tick       ((t (:foreground ,nord-comment))))
+
+    ;; > Outline
+    `(outline-1     ((,class (:foreground ,nord8 :weight bold))))
+    `(outline-2     ((,class (:inherit outline-1))))
+    `(outline-3     ((,class (:inherit outline-1))))
+    `(outline-4     ((,class (:inherit outline-1))))
+    `(outline-5     ((,class (:inherit outline-1))))
+    `(outline-6     ((,class (:inherit outline-1))))
+    `(outline-7     ((,class (:inherit outline-1))))
+    `(outline-8     ((,class (:inherit outline-1))))
 
     ;; > Whitespace
     `(trailing-whitespace                   ((,class (:background ,nord-comment :foreground ,nord4))))
