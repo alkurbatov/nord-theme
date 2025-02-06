@@ -174,6 +174,10 @@
     `(dired-directory ((,class (:foreground ,nord9 :weight bold))))
     `(dired-symlink   ((,class (:foreground ,nord7 :weight bold))))
 
+    ;; > Pulse
+    `(pulse-highlight-face           ((,class (:background ,nord13))))
+    `(pulse-highlight-start-face     ((,class (:background ,nord13))))
+
     ;; +--- Syntax ---+
     ;; > C
     `(c-annotation-face ((,class (:foreground ,nord-annotation))))
