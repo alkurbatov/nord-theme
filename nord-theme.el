@@ -77,15 +77,19 @@
         (append (list
                  `(background-color . ,nord0)
                  `(background-mode . dark)
+                 '(bottom-divider-width . 0)
                  `(foreground-color . ,nord6)
-                 '(internal-border-width . 24)
+                 '(internal-border-width . 32)
                  '(left-fringe . 4)
                  '(menu-bar-lines . 0)
+                 '(right-divider-width . 0)
                  '(right-fringe . 0)
                  '(scroll-bar-mode . -1)
                  '(tool-bar-lines . 0)
                  '(undecorated-round . t) ;; emacs-plus@29 only
-                 '(vertical-scroll-bars . nil)))))
+                 '(vertical-scroll-bars . nil))))
+
+  (modify-frame-parameters nil default-frame-alist))
 
 ;;;; Color Constants
 (defvar nord0 "#2E3440") ;; polar-night-0
