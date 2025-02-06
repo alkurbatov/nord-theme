@@ -654,6 +654,17 @@
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
 
+    ;; > Ivy
+    `(ivy-current-match ((,class (:inherit region))))
+    `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))
+    `(ivy-minibuffer-match-face-2 ((,class (:background ,nord7 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-3 ((,class (:background ,nord8 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-4 ((,class (:background ,nord9 :foreground ,nord0))))
+    `(ivy-remote ((,class (:foreground ,nord14))))
+    `(ivy-posframe ((,class (:background ,nord1))))
+    `(ivy-posframe-border ((,class (:background ,nord1))))
+    `(ivy-remote ((,class (:foreground ,nord14))))
+
     ;; > Jink
     `(jinx-misspelled     ((,class (:underline (:style wave :color ,nord8)))))
 
@@ -779,16 +790,8 @@
     `(vertico-group-title         ((,class (:foreground ,nord-comment))))
     `(vertico-multiline           ((,class (:foreground ,nord-comment))))
 
-    ;; > ivy-mode
-    `(ivy-current-match ((,class (:inherit region))))
-    `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))
-    `(ivy-minibuffer-match-face-2 ((,class (:background ,nord7 :foreground ,nord0))))
-    `(ivy-minibuffer-match-face-3 ((,class (:background ,nord8 :foreground ,nord0))))
-    `(ivy-minibuffer-match-face-4 ((,class (:background ,nord9 :foreground ,nord0))))
-    `(ivy-remote ((,class (:foreground ,nord14))))
-    `(ivy-posframe ((,class (:background ,nord1))))
-    `(ivy-posframe-border ((,class (:background ,nord1))))
-    `(ivy-remote ((,class (:foreground ,nord14))))
+    ;; > Nano modeline
+    `(nano-modeline-face-secondary     ((,class (:foreground ,nord4))))
 
     ;; > perspective
     `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
