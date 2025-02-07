@@ -233,7 +233,6 @@
     `(fringe ((,class (:foreground ,nord4 :background ,nord0))))
     `(file-name-shadow ((,class (:inherit shadow))))
     `(header-line ((,class (:foreground ,nord4 :background ,nord2))))
-    `(help-argument-name ((,class (:foreground ,nord8))))
     `(highlight ((,class (:foreground ,nord8 :background ,nord2))))
     `(hl-line ((,class (:background ,nord1))))
     `(info-menu-star ((,class (:foreground ,nord9))))
@@ -319,6 +318,10 @@
     `(window-divider ((,class (:background ,nord3))))
     `(window-divider-first-pixel ((,class (:background ,nord3))))
     `(window-divider-last-pixel ((,class (:background ,nord3))))
+
+    ;; > Help
+    `(help-argument-name     ((,class (:foreground ,nord8))))
+    `(help-key-binding       ((,class (:background ,nord0))))
 
     ;; > Line numbers
     `(line-number                  ((t (:foreground ,nord-comment))))
