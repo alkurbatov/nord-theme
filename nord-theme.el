@@ -546,6 +546,10 @@
     `(avy-lead-face-1     ((,class (:background ,nord3  :foreground ,nord5))))
     `(avy-lead-face-2     ((,class (:background ,nord15 :foreground ,nord5))))
 
+    ;; > Calendar
+    `(calendar-today     ((,class (:background unspecified))))
+    `(holiday            ((,class (:background unspecified :foreground ,nord13))))
+
     ;; > Company
     `(company-echo-common                      ((,class (:foreground ,nord0 :background ,nord4))))
     `(company-preview                          ((,class (:foreground ,nord4 :background ,nord10))))
