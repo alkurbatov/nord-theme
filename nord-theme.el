@@ -612,6 +612,13 @@
     `(git-gutter+-added ((,class (:foreground ,nord14))))
     `(git-gutter+-deleted ((,class (:foreground ,nord11))))
 
+    ;; > Gotest
+    `(go-test--ok-face           ((,class (:foreground ,nord14))))
+    `(go-test--error-face        ((,class (:foreground ,nord11))))
+    `(go-test--warning-face      ((,class (:foreground ,nord13))))
+    `(go-test--pointer-face      ((,class (:foreground ,nord9))))
+    `(go-test--standard-face     ((,class (:foreground ,nord6))))
+
     ;; > Helm
     `(helm-bookmark-addressbook ((,class (:foreground ,nord7))))
     `(helm-bookmark-directory ((,class (:foreground ,nord9))))
