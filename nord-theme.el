@@ -323,7 +323,7 @@
 
     ;; > Help
     `(help-argument-name     ((,class (:foreground ,nord8))))
-    `(help-key-binding       ((,class (:background ,nord0))))
+    `(help-key-binding       ((,class (:background ,nord0 :foreground ,nord8))))
 
     ;; > Line numbers
     `(line-number                  ((t (:foreground ,nord-comment))))
