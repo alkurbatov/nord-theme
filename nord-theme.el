@@ -184,6 +184,16 @@
     ;; > C
     `(c-annotation-face ((,class (:foreground ,nord-annotation))))
 
+    ;; > Compilation
+    `(compilation-error              ((,class (:foreground ,nord11))))
+    `(compilation-info               ((,class (:foreground ,nord9))))
+    `(compilation-warning            ((,class (:foreground ,nord13))))
+    `(compilation-line-number        ((,class (:foreground ,nord6))))
+    `(compilation-column-number      ((,class (:foreground ,nord6))))
+    `(compilation-mode-line-run      ((,class (:foreground ,nord0 :background ,nord6))))
+    `(compilation-mode-line-exit     ((,class (:foreground ,nord0 :background ,nord6))))
+    `(compilation-mode-line-fail     ((,class (:foreground ,nord13 :weight normal))))
+
     ;; > diff
     `(diff-added ((,class (:foreground ,nord14))))
     `(diff-changed ((,class (:foreground ,nord13))))
