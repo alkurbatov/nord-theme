@@ -697,7 +697,7 @@
     `(ivy-posframe-border ((,class (:background ,nord1))))
     `(ivy-remote ((,class (:foreground ,nord14))))
 
-    ;; > Jink
+    ;; > Jinx
     `(jinx-misspelled     ((,class (:underline (:style wave :color ,nord8)))))
 
     ;; > Magit
@@ -758,6 +758,12 @@
 
     ;; > Cider
     `(cider-result-overlay-face ((t (:background unspecified))))
+
+    ;; > Orderless
+    `(orderless-match-face-0     ((,class (:background ,nord11 :foreground ,nord5))))
+    `(orderless-match-face-1     ((,class (:background ,nord10 :foreground ,nord5))))
+    `(orderless-match-face-2     ((,class (:background ,nord3  :foreground ,nord5))))
+    `(orderless-match-face-3     ((,class (:background ,nord15 :foreground ,nord5))))
 
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord7 :weight extra-bold))))
