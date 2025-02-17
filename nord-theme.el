@@ -294,15 +294,6 @@
     `(show-paren-match ((,class (:foreground ,nord0 :background ,nord8))))
     `(show-paren-mismatch ((,class (:background ,nord11))))
     `(success ((,class (:foreground ,nord14))))
-    `(term ((,class (:foreground ,nord4 :background ,nord0))))
-    `(term-color-black ((,class (:foreground ,nord1 :background ,nord1))))
-    `(term-color-white ((,class (:foreground ,nord5 :background ,nord5))))
-    `(term-color-cyan ((,class (:foreground ,nord7 :background ,nord7))))
-    `(term-color-blue ((,class (:foreground ,nord8 :background ,nord8))))
-    `(term-color-red ((,class (:foreground ,nord11 :background ,nord11))))
-    `(term-color-yellow ((,class (:foreground ,nord13 :background ,nord13))))
-    `(term-color-green ((,class (:foreground ,nord14 :background ,nord14))))
-    `(term-color-magenta ((,class (:foreground ,nord15 :background ,nord15))))
     `(tool-bar ((,class (:foreground ,nord4 :background ,nord3))))
     `(tooltip ((,class (:foreground ,nord0 :background ,nord4))))
     `(tty-menu-disabled-face ((,class (:foreground ,nord1))))
@@ -350,6 +341,43 @@
     `(outline-6     ((,class (:inherit outline-1))))
     `(outline-7     ((,class (:inherit outline-1))))
     `(outline-8     ((,class (:inherit outline-1))))
+
+    ;; > Terminal
+    `(term                   ((,class (:foreground ,nord4 :background ,nord0))))
+    `(term-bold              ((,class (:foreground ,nord4 :background ,nord0 :weight normal))))
+    `(term-color-black       ((,class (:foreground ,nord1 :background ,nord1))))
+    `(term-color-blue        ((,class (:foreground ,nord8 :background ,nord9))))
+    `(term-color-cyan        ((,class (:foreground ,nord7 :background ,nord7))))
+    `(term-color-green       ((,class (:foreground ,nord14 :background ,nord14))))
+    `(term-color-magenta     ((,class (:foreground ,nord15 :background ,nord15))))
+    `(term-color-red         ((,class (:foreground ,nord11 :background ,nord11))))
+    `(term-color-white       ((,class (:foreground ,nord5 :background ,nord5))))
+    `(term-color-yellow      ((,class (:foreground ,nord13 :background ,nord13))))
+
+    ;; > Terminal ANSI colors
+    `(ansi-color-black              ((,class (:foreground ,nord1))))
+    `(ansi-color-bold               ((,class (:foreground ,nord4 :weight normal))))
+    `(ansi-color-bright-black       ((,class (:foreground ,nord4 :weight normal))))
+    `(ansi-color-faint              ((,class (:foreground ,nord-comment))))
+    `(ansi-color-fast-blink         ((,class (:foreground ,nord-comment))))
+    `(ansi-color-slow-blink         ((,class (:foreground ,nord-comment))))
+    `(ansi-color-inverse            ((,class (:foreground ,nord0 :background ,nord6))))
+    `(ansi-color-italic             ((,class (:inherit italic))))
+    `(ansi-color-underline          ((,class (:foreground ,nord-comment))))
+    `(ansi-color-blue               ((,class (:foreground ,nord9))))
+    `(ansi-color-bright-blue        ((,class (:background ,nord8))))
+    `(ansi-color-cyan               ((,class (:foreground ,nord7))))
+    `(ansi-color-bright-cyan        ((,class (:background ,nord7))))
+    `(ansi-color-green              ((,class (:foreground ,nord14))))
+    `(ansi-color-bright-green       ((,class (:background ,nord14))))
+    `(ansi-color-magenta            ((,class (:foreground ,nord15))))
+    `(ansi-color-bright-magenta     ((,class (:background ,nord15))))
+    `(ansi-color-red                ((,class (:foreground ,nord11))))
+    `(ansi-color-bright-red         ((,class (:background ,nord12))))
+    `(ansi-color-white              ((,class (:background ,nord2))))
+    `(ansi-color-bright-white       ((,class (:inherit default))))
+    `(ansi-color-yellow             ((,class (:foreground ,nord13))))
+    `(ansi-color-bright-yellow      ((,class (:background ,nord13))))
 
     ;; > Whitespace
     `(trailing-whitespace                   ((,class (:background ,nord-comment :foreground ,nord4))))
@@ -738,6 +766,9 @@
     `(powerline-evil-visual-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
 
+    ;; > Nano modeline
+    `(nano-modeline-face-secondary     ((,class (:foreground ,nord4))))
+
     ;; > NeoTree
     `(neo-banner-face ((,class (:foreground ,nord10))))
     `(neo-dir-link-face ((,class (:foreground ,nord9))))
@@ -828,8 +859,8 @@
     `(vertico-group-title         ((,class (:foreground ,nord-comment))))
     `(vertico-multiline           ((,class (:foreground ,nord-comment))))
 
-    ;; > Nano modeline
-    `(nano-modeline-face-secondary     ((,class (:foreground ,nord4))))
+    ;; > Xref
+    `(xref-match     ((,class (:foreground ,nord8 :background unspecified))))
 
     ;; > perspective
     `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
