@@ -211,6 +211,15 @@
     `(diff-refine-removed ((,class (:foreground ,nord11))))
     `(diff-removed ((,class (:foreground ,nord11))))
 
+    ;; > smerge
+    `(smerge-markers             ((,class (:background ,nord0))))
+    `(smerge-upper               ((,class (:background "#475567"))))
+    `(smerge-base                ((,class (:background "#363B45"))))
+    `(smerge-lower               ((,class (:background "#4B5D65"))))
+    `(smerge-refined-changed     ((,class (:background ,nord13 :foreground ,nord0))))
+    `(smerge-refined-added       ((,class (:background ,nord14 :foreground ,nord0))))
+    `(smerge-refined-removed     ((,class (:background ,nord11 :foreground ,nord0))))
+
     ;; > Eglot
     `(eglot-diagnostic-tag-deprecated-face      ((,class (:underline (:style wave :color ,nord8)))))
     `(eglot-diagnostic-tag-unnecessary-face     ((,class (:underline (:style wave :color ,nord8)))))
