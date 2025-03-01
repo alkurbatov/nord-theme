@@ -166,7 +166,7 @@
     `(font-lock-string-face                   ((,class (:foreground ,nord-string))))
     `(font-lock-type-face                     ((,class (:foreground ,nord4))))
     `(font-lock-variable-name-face            ((,class (:foreground ,nord-variable))))
-    `(font-lock-warning-face                  ((,class (:foreground ,nord13))))
+    `(font-lock-warning-face                  ((,class (:underline (:style wave :color ,nord13)))))
     `(italic                                  ((,class (:slant italic))))
     `(shadow                                  ((,class (:foreground ,nord3))))
     `(underline                               ((,class (:underline t))))
