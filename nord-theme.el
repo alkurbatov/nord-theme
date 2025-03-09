@@ -79,7 +79,6 @@
                  `(background-mode . dark)
                  '(bottom-divider-width . 0)
                  `(foreground-color . ,nord6)
-                 '(height . 44)
                  '(internal-border-width . 32)
                  '(left-fringe . 4)
                  '(menu-bar-lines . 0)
@@ -88,8 +87,7 @@
                  '(scroll-bar-mode . -1)
                  '(tool-bar-lines . 0)
                  '(undecorated-round . t)
-                 '(vertical-scroll-bars . nil)
-                 '(width  . 120))))
+                 '(vertical-scroll-bars . nil))))
 
   (modify-frame-parameters nil default-frame-alist))
 
