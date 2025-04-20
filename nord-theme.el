@@ -386,6 +386,24 @@
     `(ansi-color-yellow             ((,class (:foreground ,nord13))))
     `(ansi-color-bright-yellow      ((,class (:background ,nord13))))
 
+    ;; > VTerm colors
+    `(vterm-color-black              ((,class (:foreground ,nord1))))
+    `(vterm-color-bright-black       ((,class (:foreground ,nord4 :weight normal))))
+    `(vterm-color-blue               ((,class (:foreground ,nord9))))
+    `(vterm-color-bright-blue        ((,class (:background ,nord8))))
+    `(vterm-color-cyan               ((,class (:foreground ,nord7))))
+    `(vterm-color-bright-cyan        ((,class (:background ,nord7))))
+    `(vterm-color-green              ((,class (:foreground ,nord14))))
+    `(vterm-color-bright-green       ((,class (:background ,nord14))))
+    `(vterm-color-magenta            ((,class (:foreground ,nord15))))
+    `(vterm-color-bright-magenta     ((,class (:background ,nord15))))
+    `(vterm-color-red                ((,class (:foreground ,nord11))))
+    `(vterm-color-bright-red         ((,class (:background ,nord12))))
+    `(vterm-color-white              ((,class (:background ,nord2))))
+    `(vterm-color-bright-white       ((,class (:inherit default))))
+    `(vterm-color-yellow             ((,class (:foreground ,nord13))))
+    `(vterm-color-bright-yellow      ((,class (:background ,nord13))))
+
     ;; > Whitespace
     `(trailing-whitespace                   ((,class (:background ,nord-comment :foreground ,nord4))))
     `(whitespace-big-indent                 ((,class (:foreground ,nord-comment))))
