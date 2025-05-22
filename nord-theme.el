@@ -223,6 +223,9 @@
     `(eglot-diagnostic-tag-unnecessary-face     ((,class (:underline (:style wave :color ,nord8)))))
     `(eglot-inlay-hint-face                     ((,class (:foreground ,nord-comment))))
 
+    ;; > Xref
+    `(xref-match     ((,class (:foreground ,nord8 :background unspecified))))
+
     ;; +--- UI ---+
     `(border ((,class (:foreground ,nord4))))
     `(buffer-menu-buffer ((,class (:foreground ,nord4 :weight bold))))
@@ -334,10 +337,14 @@
     `(help-key-binding       ((,class (:background ,nord0 :foreground ,nord8))))
 
     ;; > Line numbers
-    `(line-number                  ((t (:foreground ,nord-comment))))
-    `(line-number-current-line     ((t (:foreground ,nord4 :background ,nord1 :weight bold))))
-    `(line-number-major-tick       ((t (:foreground ,nord-comment))))
-    `(line-number-minor-tick       ((t (:foreground ,nord-comment))))
+    `(line-number                  ((,class (:foreground ,nord-comment))))
+    `(line-number-current-line     ((,class (:foreground ,nord4 :background ,nord1 :weight bold))))
+    `(line-number-major-tick       ((,class (:foreground ,nord-comment))))
+    `(line-number-minor-tick       ((,class (:foreground ,nord-comment))))
+
+    ;; > log-edit
+    `(log-edit-headers-separator                 ((,class (:inherit default))))
+    `(log-edit-summary                           ((,class (:foreground ,nord8 :weight bold))))
 
     ;; > Outline
     `(outline-1     ((,class (:foreground ,nord8 :weight bold))))
@@ -386,23 +393,9 @@
     `(ansi-color-yellow             ((,class (:foreground ,nord13))))
     `(ansi-color-bright-yellow      ((,class (:background ,nord13))))
 
-    ;; > VTerm colors
-    `(vterm-color-black              ((,class (:foreground ,nord1))))
-    `(vterm-color-bright-black       ((,class (:foreground ,nord4 :weight normal))))
-    `(vterm-color-blue               ((,class (:foreground ,nord9))))
-    `(vterm-color-bright-blue        ((,class (:background ,nord8))))
-    `(vterm-color-cyan               ((,class (:foreground ,nord7))))
-    `(vterm-color-bright-cyan        ((,class (:background ,nord7))))
-    `(vterm-color-green              ((,class (:foreground ,nord14))))
-    `(vterm-color-bright-green       ((,class (:background ,nord14))))
-    `(vterm-color-magenta            ((,class (:foreground ,nord15))))
-    `(vterm-color-bright-magenta     ((,class (:background ,nord15))))
-    `(vterm-color-red                ((,class (:foreground ,nord11))))
-    `(vterm-color-bright-red         ((,class (:background ,nord12))))
-    `(vterm-color-white              ((,class (:background ,nord2))))
-    `(vterm-color-bright-white       ((,class (:inherit default))))
-    `(vterm-color-yellow             ((,class (:foreground ,nord13))))
-    `(vterm-color-bright-yellow      ((,class (:background ,nord13))))
+     ;; > VC
+    `(vc-git-log-edit-summary-target-warning     ((,class (:foreground ,nord13))))
+    `(vc-git-log-edit-summary-max-warning        ((,class (:foreground ,nord11))))
 
     ;; > Whitespace
     `(trailing-whitespace                   ((,class (:background ,nord-comment :foreground ,nord4))))
@@ -884,8 +877,23 @@
     `(vertico-group-title         ((,class (:foreground ,nord-comment))))
     `(vertico-multiline           ((,class (:foreground ,nord-comment))))
 
-    ;; > Xref
-    `(xref-match     ((,class (:foreground ,nord8 :background unspecified))))
+    ;; > VTerm colors
+    `(vterm-color-black              ((,class (:foreground ,nord1))))
+    `(vterm-color-bright-black       ((,class (:foreground ,nord4 :weight normal))))
+    `(vterm-color-blue               ((,class (:foreground ,nord9))))
+    `(vterm-color-bright-blue        ((,class (:background ,nord8))))
+    `(vterm-color-cyan               ((,class (:foreground ,nord7))))
+    `(vterm-color-bright-cyan        ((,class (:background ,nord7))))
+    `(vterm-color-green              ((,class (:foreground ,nord14))))
+    `(vterm-color-bright-green       ((,class (:background ,nord14))))
+    `(vterm-color-magenta            ((,class (:foreground ,nord15))))
+    `(vterm-color-bright-magenta     ((,class (:background ,nord15))))
+    `(vterm-color-red                ((,class (:foreground ,nord11))))
+    `(vterm-color-bright-red         ((,class (:background ,nord12))))
+    `(vterm-color-white              ((,class (:background ,nord2))))
+    `(vterm-color-bright-white       ((,class (:inherit default))))
+    `(vterm-color-yellow             ((,class (:foreground ,nord13))))
+    `(vterm-color-bright-yellow      ((,class (:background ,nord13))))
 
     ;; > perspective
     `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
