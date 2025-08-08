@@ -87,6 +87,7 @@
                  '(scroll-bar-mode . -1)
                  '(tool-bar-lines . 0)
                  '(undecorated-round . t)
+                 '(horizontal-scroll-bars . nil)
                  '(vertical-scroll-bars . nil))))
 
   (modify-frame-parameters nil default-frame-alist))
