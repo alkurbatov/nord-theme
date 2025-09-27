@@ -175,6 +175,10 @@
     `(dired-directory ((,class (:foreground ,nord9 :weight bold))))
     `(dired-symlink   ((,class (:foreground ,nord7 :weight bold))))
 
+    ;; > Man
+    `(Man-overstrike           ((,class (:foreground ,nord8 :weight bold))))
+    `(Man-underline            ((,class (:foreground ,nord14 :weight bold))))
+
     ;; > Pulse
     `(pulse-highlight-face           ((,class (:background ,nord13))))
     `(pulse-highlight-start-face     ((,class (:background ,nord13))))
@@ -563,6 +567,14 @@
     `(rainbow-delimiters-depth-7-face ((,class :foreground ,nord14)))
     `(rainbow-delimiters-depth-8-face ((,class :foreground ,nord15)))
     `(rainbow-delimiters-unmatched-face ((,class :foreground ,nord11)))
+
+    ;; > tldr
+    `(tldr-code-block           ((,class :background ,nord0 :foreground ,nord14 :underline nil)))
+    `(tldr-command-argument     ((,class (:foreground ,nord14))))
+    `(tldr-command-itself       ((,class :foreground ,nord8)))
+    `(tldr-description          ((,class (:inherit default))))
+    `(tldr-introduction         ((,class (:inherit default))))
+    `(tldr-title                ((,class :foreground ,nord8)))
 
     ;; > Web Mode
     `(web-mode-attr-tag-custom-face ((,class (:foreground ,nord-attribute))))
