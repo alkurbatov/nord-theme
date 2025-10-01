@@ -86,7 +86,6 @@
                  '(right-fringe . 0)
                  '(scroll-bar-mode . -1)
                  '(tool-bar-lines . 0)
-                 '(undecorated-round . t)
                  '(horizontal-scroll-bars . nil)
                  '(vertical-scroll-bars . nil))))
 
@@ -516,6 +515,7 @@
     `(markdown-url-face ((,class (:foreground ,nord4 :underline t))))
 
     ;; > Makefile
+    `(makefile-space                   ((,class (:background ,nord-comment :foreground ,nord4))))
     `(makefile-ts-mode-target-face     ((,class (:foreground ,nord9))))
 
     ;; > Marginalia
@@ -859,7 +859,7 @@
     `(org-footnote ((,class (:foreground ,nord8))))
     `(org-formula ((,class (:foreground ,nord9))))
     `(org-hide ((,class (:foreground ,nord0 :background ,nord0))))
-    `(org-link ((,class (:underline t))))
+    `(org-link ((,class (:foreground ,nord8))))
     `(org-scheduled ((,class (:foreground ,nord14))))
     `(org-scheduled-previously ((,class (:foreground ,nord13))))
     `(org-scheduled-today ((,class (:foreground ,nord8))))
